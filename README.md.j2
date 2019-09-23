@@ -49,15 +49,15 @@ Setup servers:
 ```yaml
 - hosts: servers
   roles:
-     - role: {{ role_name }}
+    - role: {{ role_name }}
 ```
 
 Unset servers:
 ```yaml
 - hosts: servers
   roles:
-     - role: {{ role_name }}
-       {{ role_name }}__action: unset
+    - role: {{ role_name }}
+      {{ role_name }}__action: unset
 ```
 
 ## License
