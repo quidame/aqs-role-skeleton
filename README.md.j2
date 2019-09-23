@@ -2,10 +2,8 @@
 
 Ansible role to setup or unset {{ role_name }}.
 
-A brief description of the role goes here.
-
 This role is a piece of (*yet another*)
-[Ansible Quick Starter](https://github.com/quidame/aqs-common) (**AQS**).
+[Ansible Quick Starter](/aqs-common) (**AQS**).
 
 ## Requirements
 
@@ -15,7 +13,8 @@ Any pre-requisites that may not be covered by Ansible itself or the role should 
 
 A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
 
-The main action the role is called for. Choices are `setup` (the default) and `unset`.
+The main action the role is called for. Choices are `setup` (the default) and
+`unset`.
 ```yaml
 {{ role_name }}__action: unset
 ```
@@ -49,15 +48,15 @@ Setup servers:
 ```yaml
 - hosts: servers
   roles:
-     - role: {{ role_name }}
+    - role: {{ role_name }}
 ```
 
 Unset servers:
 ```yaml
 - hosts: servers
   roles:
-     - role: {{ role_name }}
-       {{ role_name }}__action: unset
+    - role: {{ role_name }}
+      {{ role_name }}__action: unset
 ```
 
 ## License
