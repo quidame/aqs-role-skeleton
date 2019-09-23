@@ -1,0 +1,7 @@
+# role: {{ role_name }}
+# file: tests/requirements.yml
+---
+- name: "{{ role_name }}"
+  src: "https://github.com/quidame/aqs-role-{{ role_name }}.git"
+  scm: "git"
+  version: "devel"

@@ -1,0 +1,8 @@
+---
+- hosts: tests
+  roles:
+    - role: {{ role_name }}
+      {{ role_name }}__action: setup
+
+    - role: {{ role_name }}
+      {{ role_name }}__action: unset
