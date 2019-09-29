@@ -2,6 +2,4 @@
 # role: {{ role_name }}
 # file: tasks/main.yml
 
-- include_tasks: "{{ '{{ %s__action | default(\'setup\') }}.yml' % role_name }}"
-  tags:
-    - "aqs::{{ role_name }}"
+- import_tasks: "{{ '{{ %s__action }}.yml' % role_name }}"
