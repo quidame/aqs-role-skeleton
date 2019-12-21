@@ -12,7 +12,8 @@
 # with two underscores between the role name (that is a prefix) and `foo`, i.e.
 # what this variable is supposed to be for, as in:
 # {{ role_name }}__login: admin
-# {{ role_name }}__base_url: https://{{ role_name }}.qssdk.lab
+# {{ role_name }}__base_url: https://qssdk.lab
+
 
 ################################################################################
 ## {{ role_name }}__action
@@ -22,4 +23,4 @@
 # uninstall, configure/unconfigure, start/stop, present/absent, create/remove,
 # and so on.
 #
-#{{ role_name }}__action: setup
+{{ role_name }}__action: setup

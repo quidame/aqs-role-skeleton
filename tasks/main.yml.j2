@@ -1,7 +1,10 @@
 ---
 # role: {{ role_name }}
 # file: tasks/main.yml
+# vim: ft=yaml et sts=2 sw=2 ts=2
 
-- include_tasks: "{{ '{{ %s__action | default(\'setup\') }}.yml' % role_name }}"
-  tags:
-    - "aqs::{{ role_name }}"
+
+- import_tasks: assertions.yml
+
+
+- import_tasks: "{{ '{{ %s__action }}.yml' % role_name }}"
